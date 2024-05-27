@@ -1,25 +1,26 @@
 import React from 'react';
 import styled from "styled-components";
-import dogsHero from "../../img/dogsHero.jpeg"; 
+import heroPet from "../../img/hero-petmeets.jpg"; 
 
 export function Hero() {
   return (
     <Container>
       <ContentWrapper>
         <TextContainer>
-          <Title>A Solução da sua</Title>
-          <Subtitle>Clínica Veterinária</Subtitle>
-          <p>Agendamento automatizado facilitando o cuidado que seu cliente tem por seu Pet</p>
+          <Title>A Solução da sua Clínica Veterinária</Title>
+          <Subtitle>Otimize o agendamento de consultas veterinárias em sua clínica ou hospital com o PetMeets</Subtitle>
+          <p></p>
           <Button>Saiba Mais</Button>
         </TextContainer>
-        <Image src={dogsHero} alt="Hero Dogs"/>
       </ContentWrapper>
     </Container>
   );
 }
 
 const Container = styled.div`
-  background-color: #f5f5f5;
+  background-image: url(${heroPet});
+  background-size: cover; 
+  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,27 +46,31 @@ const TextContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
+  color: #5caceb;
+  font-size: 4rem;
   margin-bottom: 0px;
+  line-height: 1.1em;
 `;
 
-const paragrafo = styled.p`
+const Paragrafo = styled.p`
   font-size: 3rem;
   margin-bottom: 0px;
 `;
 
 const Subtitle = styled.h2`
-  font-size: 2.5rem;
-  margin: 0px;
-  color: #555;
+  font-size: 2rem;
+  weight: 400px;
+  margin-top: 40px;
+  color: #555;  
+  line-height: 1.3em;
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: #5caceb;
   margin-top: 30px;
   color: white;
   padding: 15px 30px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: none;
   border-radius: 15px;
   cursor: pointer;
