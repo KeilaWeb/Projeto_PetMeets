@@ -1,0 +1,19 @@
+@use 'variables'
+
+@mixin center 
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+@mixin btn 
+  padding: 1rem 1.2rem
+  color: variables.$mm-white
+  background: variables.$mm-color-primary
+  text-decoration: none
+  border-radius: 3rem
+
+  &:hover 
+    background: variables.$mm-color-secondary
+  
+

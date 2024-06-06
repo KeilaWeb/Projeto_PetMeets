@@ -1,15 +1,12 @@
 import React from "react";
-import { Hero } from "../../components/Hero";
-import styled from "styled-components";
+import { Hero } from "../../components/Hero/Hero";
+import '../../styles/components/_home.sass';
 
 export function Home() {
     return (
-        <Container>
+        <div className="container">
             <Hero />
-        </Container>
+        </div>
     );
 }
 
-const Container = styled.div`
-    padding: 20px;
-`;
