@@ -1,1 +1,63 @@
+@import '../variables'
+@import '../mixins'
 
+.hero-container
+  background-image: url('../../img/hero-petmeets.jpg')
+  background-size: cover
+  height: 90vh
+  width: 100%
+  @include center
+
+.content-wrapper
+  @include center
+  justify-content: space-between
+  max-width: 1200px
+  width: 100%
+  padding: 60px
+
+.title-container
+  width: 60%
+
+.text-container
+  width: 90%
+
+.title
+  color: $mm-color-primary
+  font-size: 4rem
+  margin-bottom: 0
+  line-height: 1.1em
+
+.subtitle
+  font-size: 2rem
+  font-weight: 500
+  margin-top: 40px
+  color: #555
+  line-height: 1.3em
+
+.subtitle-ligth
+  font-size: 1.5rem
+  font-weight: 400
+  margin-top: 40px
+  color: #555
+  line-height: 1.3em
+
+.button
+  background-color: $mm-color-primary
+  margin-top: 30px
+  color: white
+  padding: 15px 30px
+  font-size: 1.1rem
+  border: none
+  border-radius: 15px
+  cursor: pointer
+  transition: background-color 0.3s, transform 0.3s
+
+  &:hover
+    background-color: $mm-color-secondary
+    transform: translateY(-2px)
+
+  &:active
+    background-color: $mm-color-secondary
+    transform: translateY(0)
+
+  
