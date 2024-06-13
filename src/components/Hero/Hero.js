@@ -16,4 +16,4 @@ export function Hero() {
   );
 }
 
-export * from "./Hero.js";
+export default Hero;

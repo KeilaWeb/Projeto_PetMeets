@@ -15,4 +15,4 @@ export function About() {
   );
 }
 
-export * from "./About.js";
+export default About;

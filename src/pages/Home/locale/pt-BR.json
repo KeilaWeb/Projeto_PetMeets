@@ -1,0 +1,12 @@
+{
+    "benefits" : [
+        {
+            "title": "Título",
+            "content": "Descrição"
+        },
+        {
+            "title": "Título 2",
+            "content": "Descrição 2"
+        }
+    ]
+}
