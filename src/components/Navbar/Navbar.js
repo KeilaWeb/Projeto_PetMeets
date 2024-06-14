@@ -5,7 +5,7 @@ import logo from '../../img/logo_petmeets.png'; // Ajuste o caminho conforme nec
 export function Navbar() {
   return (
     <header className="navbar">
-      <nav className="navbar-container ">
+      <nav className="navbar-container">
         <img
           alt="Logo PetMeets"
           loading="lazy"
