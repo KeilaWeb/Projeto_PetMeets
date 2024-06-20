@@ -3,7 +3,7 @@ import '../../styles/components/_home.sass';
 
 export function Benefits({title, content}) {
   return (
-    <div className= "card">
+    <div className= "home-card">
         <h1 className="title">{ title }</h1>
         <p className="content">{ content }</p>
     </div>
