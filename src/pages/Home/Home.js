@@ -13,7 +13,7 @@ return (
         <div className="st-container">
             <div className="container-content">
                 <div className="benefits-card">
-                    <h1 className="title text-align">A plataforma completa para seu consultório</h1>
+                    <h1 className="title text-align paddin-botton">A plataforma completa para seu consultório</h1>
                 </div>
             </div>   
         </div>           
@@ -39,4 +39,3 @@ return (
     </div>
 );
 }
-

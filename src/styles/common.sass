@@ -1,0 +1,32 @@
+@import 'variables'
+
+.button
+  background-color: $mm-color-primary
+  margin-top: 30px
+  color: white
+  padding: 15px 30px
+  font-size: 1.1rem
+  border: none
+  border-radius: 15px
+  cursor: pointer
+  transition: background-color 0.3s, transform 0.3s
+
+  &:hover
+    background-color: $mm-color-secondary
+    transform: translateY(-2px)
+
+  &:active
+    background-color: $mm-color-secondary
+    transform: translateY(0)
+
+.text-align
+  text-align: center
+
+.item-align
+  justify-content: center
+
+.space-between
+  justify-content: space-between
+
+.paddin-botton
+  padding-bottom: 20px

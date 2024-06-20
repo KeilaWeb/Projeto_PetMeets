@@ -1,12 +1,28 @@
 {
     "benefits" : [
         {
-            "title": "Título",
-            "content": "Descrição"
+            "title": "Título1",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem vel neque sollicitudin."
         },
         {
             "title": "Título 2",
-            "content": "Descrição 2"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem vel neque sollicitudin."
+        },
+        {
+            "title": "Título1",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem vel neque sollicitudin."
+        },
+        {
+            "title": "Título 2",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem vel neque sollicitudin."
+        },
+        {
+            "title": "Título1",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem vel neque sollicitudin."
+        },
+        {
+            "title": "Título 2",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem vel neque sollicitudin."
         }
     ]
 }
