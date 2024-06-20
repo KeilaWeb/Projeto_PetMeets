@@ -1,0 +1,62 @@
+@import '../variables'
+@import '../mixins'
+
+.footer
+  background-color: #f5f5f5
+  padding: 20px 0
+  border-top: 1px solid #e0e0e0
+
+  .page--full
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 20px
+
+  .footer--top, .footer--middle, .footer--bottom
+    margin-bottom: 20px
+
+  .social--follow
+    ul
+      display: flex
+      justify-content: space-around
+      list-style: none
+      padding: 0
+
+    .social--follow-item
+      .social--follow-link
+        display: inline-block
+        color: #5f6368
+        font-size: 24px
+        &:hover
+          color: #4285f4
+
+        .social--icon
+          width: 24px
+          height: 24px
+
+  .footer--middle
+    ul
+      display: flex
+      justify-content: space-around
+      list-style: none
+      padding: 0
+
+      li
+        a
+          text-decoration: none
+          color: #5f6368
+          &:hover
+            color: #4285f4
+
+  .footer--bottom
+    ul
+      display: flex
+      justify-content: center
+      list-style: none
+      padding: 0
+
+      li
+        a
+          text-decoration: none
+          color: #5f6368
+          &:hover
+            color: #4285f4
