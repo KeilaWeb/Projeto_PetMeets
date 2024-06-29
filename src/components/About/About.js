@@ -10,8 +10,8 @@ export function About() {
           <img src={heroImage}  alt='Hero PetMeets'/>
         </div>
         <div className="title-container margin-left">
-          <h2 className="h2">O jeito mais prático e rápido de gerir agendamentos de clínicas e hospitais veterinarios</h2>
-          <h2 className="h3">Otimize o agendamento de consultas veterinárias em sua clínica ou hospital com o PetMeets</h2>
+          <h2 className="color-blue paddin-bottom-40">O jeito mais prático e rápido de gerir agendamentos de clínicas e hospitais veterinarios</h2>
+          <h3 className="color-dark-blue paddin-bottom-40">Otimize o agendamento de consultas veterinárias em sua clínica ou hospital com o PetMeets</h3>
           <p></p>
           <button className="button">Saiba Mais</button>
         </div>
