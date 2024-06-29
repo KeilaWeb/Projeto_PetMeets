@@ -1,0 +1,57 @@
+@import '../../../styles/variables'
+@import '../../../styles/typography'
+
+.login-form
+  width: 100%
+  max-width: 400px
+  margin: 0 auto
+  padding: 20px
+
+  .form
+    .input
+      width: 100%
+      padding: 14px
+      margin-bottom: 20px
+      border: none
+      border-bottom: 1.5px solid $color-white
+      background-color: transparent
+      color: $color-white
+      font-size: $font-regular
+      transition: border-bottom-color 0.3s ease
+
+      &:focus
+        outline: none
+        border-bottom-color: $color-blue
+
+      .placeholder
+        color: $color-white !important
+
+    .button
+      width: 100%
+      padding: 10px
+      border: none
+      border-radius: $border-radius
+      background-color: $color-white
+      color: $color-blue
+      font-size: 16px
+      font-weight: 600
+      margin: 20px 0px
+      cursor: pointer
+      transition: background-color 0.3s ease
+
+      &:hover
+        background-color: $color-blue-secondary
+
+    .auth-options
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+
+      .text-small
+        a
+          color: $color-blue
+          text-decoration: none
+          transition: color 0.3s ease
+
+          &:hover
+            color: $color-blue-secondary

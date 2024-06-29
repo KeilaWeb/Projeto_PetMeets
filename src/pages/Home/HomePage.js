@@ -13,7 +13,7 @@ export function HomePage() {
                 <div className="st-container color-grey">
                     <div className="content-no-padding-bottom">
                         <div className="benefits-card">
-                            <h2 className="color-dark-blue text-align padding-bottom">A plataforma completa para seu consultório</h2>
+                            <h2 className="color-dark-blue text-align padding-bottom-40">A plataforma completa para seu consultório</h2>
                         </div>
                     </div>   
                 </div>           
