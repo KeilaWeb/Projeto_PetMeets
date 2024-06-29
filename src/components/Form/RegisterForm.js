@@ -1,43 +1,17 @@
-import React, { useState } from 'react';
-import '../../styles/components/_form.sass';
+import React from 'react';
 
 const RegisterForm = ({ toggleView }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Lógica de cadastro
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Cadastre-se</h2>
-      <label>Email</label>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <label>Password</label>
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <label>Confirm Password</label>
-      <input
-        type="password"
-        value={confirmPassword}
-        onChange={(e) => setConfirmPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Cadastre-se</button>
-      <p>Já tem uma conta? <span onClick={() => toggleView('login')}>Login</span></p>
-    </form>
+    <div className="register-form">
+      <h2>Register</h2>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Register</button>
+      </form>
+      <button onClick={() => toggleView('options')}>Back</button>
+    </div>
   );
 };
 

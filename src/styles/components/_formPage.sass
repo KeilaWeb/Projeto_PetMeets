@@ -1,0 +1,39 @@
+.form-page
+  display: flex
+  height: 100vh
+
+  &__image
+    position: relative
+    width: 60%
+    background: url('../../img/veterinarian.jpg') no-repeat center center
+    background-size: cover
+    overflow: hidden
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.6)  // Cor preta com 40% de opacidade
+
+  &__content
+    width: 40%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 20px
+    background-color: rgba(255, 255, 255, 0.8)  // Cor de fundo branca com 80% de opacidade
+
+  &__logo
+    width: 200px
+    margin-bottom: 20px
+
+.auth-options
+  display: flex
+  flex-direction: column
+
+  button
+    margin: 10px 0

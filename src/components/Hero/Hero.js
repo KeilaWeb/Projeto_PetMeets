@@ -7,8 +7,8 @@ export function Hero() {
     <div className="st-container">
       <div className="content-wrapper-hero">
         <div className="title-container">
-          <h1 className="title-g paddin-botton">A Solução da sua Clínica Veterinária</h1>
-          <h2 className="subtitle-ligth text-container paddin-botton">Otimize o agendamento de consultas veterinárias em sua clínica ou hospital com o PetMeets</h2>
+          <h1 className="h1 paddin-botton">A Solução da sua Clínica Veterinária</h1>
+          <h2 className="h3 text-container paddin-botton">Otimize o agendamento de consultas veterinárias em sua clínica ou hospital com o PetMeets</h2>
           <p></p>
           <button className="button">Saiba Mais</button>
         </div>

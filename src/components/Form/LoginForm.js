@@ -1,35 +1,16 @@
-import React, { useState } from 'react';
-import '../../styles/components/_form.sass';
+import React from 'react';
 
 const LoginForm = ({ toggleView }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Lógica de autenticação
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="login-form">
       <h2>Login</h2>
-      <label>Email</label>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <label>Password</label>
-      <input
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <button type="submit">Login</button>
-      <p>Não tem uma conta? <span onClick={() => toggleView('register')}>Cadastre-se</span></p>
-    </form>
+      <form>
+        <input type="text" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="submit">Login</button>
+      </form>
+      <button onClick={() => toggleView('options')}>Back</button>
+    </div>
   );
 };
 
