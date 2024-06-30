@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import logo from '../../img/logo-pet-branca.png';
 import '../../styles/components/_formPage.sass';
 import LoginForm from '../../components/Form/LoginForm';
-import logo from '../../img/logo_petmeets.png';
+import RegisterForm from '../../components/Form/RegisterForm';
 
 const FormPage = () => {
-  const [view, setView] = useState('options');
+  const [view, setView] = useState('login');
 
   const toggleView = (view) => {
     setView(view);
@@ -15,7 +16,8 @@ const FormPage = () => {
       <div className="form-page__image"></div>
       <div className="form-page__content">
         <img src={logo} alt="Logo PetMeets" className="form-page__logo" />
-        <LoginForm />
+        {view === 'login' && <LoginForm toggleView={() => toggleView('register')} />}
+        {view === 'register' && <RegisterForm toggleView={() => toggleView('login')} />}
       </div>
     </div>
   );

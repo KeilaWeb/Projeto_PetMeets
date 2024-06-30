@@ -1,21 +1,20 @@
 @import '../../../styles/variables'
 @import '../../../styles/typography'
 
-.login-form
+.register-form
   width: 100%
   max-width: 400px
   margin: 0 auto
-  padding: 20px
-
+  
   .form
     .input
       width: 100%
       padding: 14px
       margin-bottom: 20px
       border: none
-      border-bottom: 1.5px solid $color-white
+      border-bottom: 1px solid $color-white
       background-color: transparent
-      color: $color-white
+      color: $color-pink
       font-size: $font-regular
       transition: border-bottom-color 0.3s ease
 
@@ -26,24 +25,24 @@
     .button
       width: 100%
       padding: 10px
+      margin: 10px 0px
       border: none
-      border-radius: $border-radius      
+      border-radius: $border-radius
       background-color: $color-pink
       color: $color-white
-      font-size: 16px
-      font-weight: 600
-      margin: 20px 0px
+      font-size: $font-medium
       cursor: pointer
-      transition: background-color 0.9s ease
+      transition: background-color 0.6s ease
 
       &:hover        
         background-color: $color-white
         color: $color-pink
         transition: background-color 0.9s ease
 
-    .auth-options
-      display: flex
-      cursor: pointer
-      justify-content: space-between
-      margin-top: 10px
-      z-index: 1
+.button-back
+    font-size: 16px
+    cursor: pointer
+    color: $color-white
+    margin-top: 10px
+    background-color: #ffffff00
+    border: none
