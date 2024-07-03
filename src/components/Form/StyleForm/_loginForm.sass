@@ -16,18 +16,21 @@
       border-bottom: 1.5px solid $color-white
       background-color: transparent
       color: $color-white
-      font-size: $font-regular
+      font-size: 18px
       transition: border-bottom-color 0.3s ease
 
       &:focus
         outline: none
         border-bottom-color: $color-blue
 
+      &::placeholder
+        color: $color-white
+
     .button
       width: 100%
       padding: 10px
       border: none
-      border-radius: $border-radius      
+      border-radius: $border-radius
       background-color: $color-pink
       color: $color-white
       font-size: 16px
@@ -36,7 +39,7 @@
       cursor: pointer
       transition: background-color 0.9s ease
 
-      &:hover        
+      &:hover
         background-color: $color-white
         color: $color-pink
         transition: background-color 0.9s ease
