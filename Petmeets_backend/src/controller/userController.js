@@ -5,8 +5,9 @@ async function getAllUser(req, res){
         const rows = await userService.getAllUser();
         res.status(200).json(rows);
     }catch(error){
+        console.error("Error getting users:", error);
         res.status(500).send({
-            message: "Error getting user",
+            message: "Erro ao obter usuário",
             body: error.message,
         })
     }
@@ -14,28 +15,30 @@ async function getAllUser(req, res){
 
 async function createUser(req, res){
         try{
-            const {name, email, password} = req.body;
+            const {name, email, telefone, password, perfil} = req.body;
 
-            await userService.createUser(name, email, password);
-            res.status(200).json({ message: "Success"})
+            await userService.createUser(name, email, telefone, password, perfil);
+            res.status(200).json({ message: "Successo na criação do usuário"})
         }catch(error){
+            console.error("Error creating user:", error);
             res.status(500).send
         ({
-            message: "Error adding user!",
+            message: "Erro ao adicionar usuario!",
             error:error.message,
-        })    
+        })
     }
 }
 
 async function updateUser(req, res) {
     try {
         const { id } = req.params;
-        const { name, email, password } = req.body;
-        await userService.updateUser(id, name, email, password);
-        res.status(200).json("Success");
+        const { name, email, telefone, password, perfil } = req.body;
+        await userService.updateUser(id, name, email, telefone, password, perfil);
+        res.status(200).json("Successo ao atualizar usuário");
     } catch(error) {
+        console.error("Error updating user:", error);
         res.status(500).send({
-            message: 'Error updating user',
+            message: 'Erro ao atualizar usuario',
             body: error.message,
         })
     }
@@ -45,10 +48,11 @@ async function deleteUser(req, res){
     try {
         const {id } = req.params;
         await userService.deleteUser(id);
-        res.status(200).send({message: "Deleted User!"});
+        res.status(200).send({message: "Usuario deletado!"});
     } catch (error) {
+        console.error("Error deleting user:", error);
         res.status(500).send({
-            message: "Error deleting user!",
+            message: "Erro ao deletar usuario!",
             error: error.message,
         })
     }
@@ -60,8 +64,9 @@ async function getUserById(req, res){
         const user = await userService.getUserById(id);
         res.status(200).json(user);
     } catch (error) {
+        console.error("Error getting user by ID:", error);
         res.status(500).send({
-            message: "Error getting user ID!",
+            message: "Erro ao obter o ID do usuário!",
             error: error.message,
         })
     }

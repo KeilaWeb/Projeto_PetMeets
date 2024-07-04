@@ -7,14 +7,14 @@ async function createDatabase(){
             host: databaseConfig.host,
             user: databaseConfig.user,
             password: databaseConfig.password,
-        });    
+        });
         await connection.query(
             `CREATE DATABASE IF NOT EXISTS ${databaseConfig.database}`
-        );    
-        await connection.end();    
-        console.log("Database created!");
+        );
+        await connection.end();
+        console.log("Banco de dados criado!");
     }catch (error){
-        console.log(`Error creating database: $(error)`)
+        console.log(`Erro ao criar banco de dados: $(error)`)
     }
 }
 
