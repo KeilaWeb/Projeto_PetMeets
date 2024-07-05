@@ -10,8 +10,7 @@ const LoginForm = ({ toggleView }) => {
         <button className="button" type="submit">Login</button>
         <div className="auth-options">
           <p className='color-white'>Esqueceu a senha?</p>
-          <p className="color-white">
-            Não tem uma conta? <a className="color-pink link" href="#" onClick={toggleView}>Cadastre-se</a>
+          <p className="color-white"> Não tem uma conta? <a className="color-pink link" href="#" onClick={toggleView}>Cadastre-se</a>
           </p>
         </div>
       </form>
