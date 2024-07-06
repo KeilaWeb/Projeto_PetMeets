@@ -7,15 +7,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <nav className="navbar-container">
-        <img
-          alt="Logo PetMeets"
-          loading="lazy"
-          width="220"
-          height="48"
-          decoding="async"
-          src={logo}
-          className="navbar-logo"
-        />
+        <img alt="Logo PetMeets" loading="lazy" width="220" height="48" decoding="async" src={logo} className="navbar-logo" />
         <ul className="navbar-links">
           <li><a href="#home"><span>Home</span></a></li>
           <li><a href="#partners"><span>Parceiros</span></a></li>

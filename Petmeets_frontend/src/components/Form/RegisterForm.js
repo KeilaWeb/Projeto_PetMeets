@@ -18,7 +18,7 @@ const RegisterForm = ({ toggleView }) => {
       console.log('User data:', userData);
       const response = await registerUser(userData);
       console.log('User registered successfully:', response);
-      window.location.reload(); // Recarrega a página em caso de sucesso
+      window.location.reload(); 
     } catch (error) {
       console.error('Registration failed:', error);
       setError('Falha ao registrar. Tente novamente.');

@@ -1,0 +1,104 @@
+@import '../variables'
+@import '../mixins'
+@import '../common'
+@import '../flex'
+@import '../typography'
+
+.dashboard-page 
+  display: flex
+
+.navbar-dashboard 
+  width: 340px
+  height: 100vh
+  background-color: $color-blue
+  color: $color-white
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px
+
+  .logo-nav 
+    top: 40px
+    left: calc( 300px - 230px )
+    position: absolute
+    width: 200px
+    height: 60px
+
+  .nav-links 
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+    a 
+      color: $color-white
+      text-decoration: none
+      background-color: $color-dark-blue
+      padding: 14px 50px
+      border-radius: 10px
+
+.main-content 
+  flex-grow: 1
+
+.menu-dashboard 
+  height: 120px 
+  background-color: $color-white
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 20px 20px
+
+  .user-info 
+    display: flex
+    align-items: center
+
+    .user-photo 
+      width: 70px
+      height: 70px
+      border-radius: 50%
+      margin-right: 10px
+      background-color: $color-blue
+
+    p 
+      margin: 0
+      font-size: 18px
+
+    button 
+      margin-top: 14px
+      background-color: transparent
+      border: none
+      color: $color-pink
+      cursor: pointer
+
+  .edit-profile 
+    background-color: $color-blue
+    color: $color-white
+    border: none
+    border-radius: 14px
+    padding: 10px 40px
+    cursor: pointer
+
+.linha-embaixo
+  border-style: solid
+  border-width: 0 0 1px 0
+  border-image: linear-gradient(to right, transparent, $color-blue, transparent)
+  border-image-slice: 1
+
+.body-dashboard 
+  flex-grow: 1
+  background-color: $color-white
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 20px
+
+  button 
+    background-color: $color-blue
+    color: $color-white
+    border: none
+    border-radius: 14px
+    padding: 16px 40px
+    cursor: pointer
+    margin: 10px
+

@@ -5,3 +5,6 @@ export { default as Benefits} from './Home/Benefits';
 export { default as LoginForm} from './Form/LoginForm';
 export { default as AuthOptions} from './Form/AuthOptions';
 export { default as RegisterForm} from './Form/RegisterForm';
+export { default as NavbarDashboard } from './Dashboard/Navbar-Dashboard';
+export { default as MenuDashboard } from './Dashboard/Menu-Dashboard';
+export { default as BodyDashboard } from './Dashboard/Body-Dashboard';
