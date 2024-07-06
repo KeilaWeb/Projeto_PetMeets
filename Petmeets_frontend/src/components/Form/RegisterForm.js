@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './StyleForm/_registerForm.sass';
 import { registerUser } from '../../services/authService';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterForm = ({ toggleView }) => {
   const [name, setName] = useState('');
@@ -10,6 +11,8 @@ const RegisterForm = ({ toggleView }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
 
+  //const navigate = useNavigate(); 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Form submitted');
@@ -18,7 +21,8 @@ const RegisterForm = ({ toggleView }) => {
       console.log('User data:', userData);
       const response = await registerUser(userData);
       console.log('User registered successfully:', response);
-      window.location.reload(); 
+      window.location.reload();       
+      // navigate('/Dashboard'); 
     } catch (error) {
       console.error('Registration failed:', error);
       setError('Falha ao registrar. Tente novamente.');
