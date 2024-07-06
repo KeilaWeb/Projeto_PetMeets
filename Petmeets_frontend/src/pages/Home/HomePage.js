@@ -1,7 +1,7 @@
 import React from "react";
-import { Hero } from "../../components/Hero/Hero.js";
+import { Hero } from "../../components/Home/Hero.js";
 import '../../styles/components/_home.sass';
-import { About } from "../../components/About/About.js";
+import { About } from "../../components/Home/About.js";
 import { Benefits } from "../../components/index.js";
 import locale from './locale/pt-BR.json';
 import imageBenefits from '../../img/benefits-petmeets.png'
