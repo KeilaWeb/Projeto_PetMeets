@@ -37,66 +37,58 @@ const PetForm = ({ pets, addPet, removePet, prevStep, handleSubmit }) => {
 
   return (
     <div>
-      <h2>Informações do Pet</h2>
+      <h5 className='padding-bottom-20 color-dark-blue'>Informações do Pet</h5>
       {pets.map((pet, index) => (
         <div key={index}>
           <p>{pet.name} ({pet.type})</p>
           <button type="button" onClick={() => removePet(index)}>Remover</button>
         </div>
       ))}
-      <form>
-        <div>
-          <label>Nome do Pet:</label>
-          <input  type="text" name="name" value={petData.name} onChange={handlePetChange} />
-        </div>
-        <div>
-          <label>Tipo de Pet:</label>
-          <input type="text"  name="type" value={petData.type}  onChange={handlePetChange} />
-        </div>
-        <div>
-          <label>Raça:</label>
-          <input type="text" name="breed" value={petData.breed} onChange={handlePetChange}
-          />
-        </div>
-        <div>
-          <label>Data de Nascimento:</label>
-          <input type="date" name="birthdate" value={petData.birthdate} onChange={handlePetChange} />
-        </div>
-        <div>
-          <label>Idade:</label>
-          <input type="text" name="age" value={petData.age} onChange={handlePetChange} />
-        </div>
-        <div>
-          <label>Cor:</label>
-          <input type="text" name="color" value={petData.color} onChange={handlePetChange} />
-        </div>
-        <div>
-          <label>Porte:</label>
-          <input type="text" name="size" value={petData.size} onChange={handlePetChange} />
-        </div>
-        <div>
-          <label>Adotado ou Comprado:</label>
-          <input type="radio"  name="adopted" value="Adotado" checked={petData.adopted === 'Adotado'} 
-            onChange={handlePetChange} /> Adotado
-          <input type="radio" name="adopted" value="Comprado" checked={petData.adopted === 'Comprado'}
-            onChange={handlePetChange} /> Comprado
-        </div>
-        <div>
-          <label>Possui alguma doença ou deficiÊncia:</label>
-          <input type="radio"  name="adopted" value="Adotado" checked={petData.adopted === 'Adotado'} 
-            onChange={handlePetChange} /> Sim
-          <input type="radio" name="adopted" value="Comprado" checked={petData.adopted === 'Comprado'}
-            onChange={handlePetChange} /> Não
-        </div>
-        <div>
-          <label>Deficiência:</label>
-          <input type="text" name="disability"  value={petData.disability} onChange={handlePetChange}
-          />
-        </div>
-        <button type="button" onClick={handleAddPet}>Adicionar Pet</button>
-      </form>
-      <button type="button" onClick={prevStep}>Voltar</button>
-      <button type="button" onClick={handleSubmit}>Enviar</button>
+      <div className='client-register-container'>
+        <form className="form-client">
+          <div className="form-group">
+            <label>Nome do Pet:</label>
+            <input className="input-register" type="text" name="name" value={petData.name} onChange={handlePetChange} />
+          </div>
+          <div className="form-group">
+            <label>Tipo de Pet:</label>
+            <input className="input-register" type="text"  name="type" value={petData.type}  onChange={handlePetChange} />
+          </div>
+          <div className="form-group">
+            <label>Raça:</label>
+            <input className="input-register" type="text" name="breed" value={petData.breed} onChange={handlePetChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Data de Nascimento:</label>
+            <input className="input-register" type="date" name="birthdate" value={petData.birthdate} onChange={handlePetChange} />
+          </div>
+          <div className="form-group">
+            <label>Idade:</label>
+            <input className="input-register" type="text" name="age" value={petData.age} onChange={handlePetChange} />
+          </div>
+          <div className="form-group">
+            <label>Cor:</label>
+            <input className="input-register" type="text" name="color" value={petData.color} onChange={handlePetChange} />
+          </div>
+          <div className="form-group">
+            <label>Porte:</label>
+            <input className="input-register" type="text" name="size" value={petData.size} onChange={handlePetChange} />
+          </div>
+          <div className="form-group padding-bottom-40">
+            <label>Observações:</label>
+            <input className="input-register" type="text" name="disability"  value={petData.disability} onChange={handlePetChange}
+            />
+          </div>
+          <button className='button' type="button" onClick={handleAddPet}>+ Adicionar Pet</button>
+        </form>
+      </div>
+      <div className='padding-bottom-20'>
+        <button className="button" type="button" onClick={handleSubmit}>Concluir Cadastro</button>
+      </div>
+      <div>
+        <button className="button-back" type="button" onClick={prevStep}>&laquo; Voltar</button>
+      </div>
     </div>
   );
 };

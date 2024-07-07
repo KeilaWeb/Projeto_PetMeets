@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/components/_dashboard.sass';
+import '../../styles/components/Dashboard/_dashboard.sass';
 
 const IntroDashboard = () => {
     return (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ClientForm from './ClientForm';
 import PetForm from './PetForm';
+import '../../../../styles/components/Dashboard/_formDashboard.sass'
 
 const RegisterClient = () => {
   const [step, setStep] = useState(1); // Estado para controlar o passo do formulário
@@ -75,22 +76,21 @@ const RegisterClient = () => {
   switch (step) {
     case 1:
       return (
-        <ClientForm
-          clientData={clientData}
-          handleClientChange={handleClientChange}
-          handleAddressChange={handleAddressChange}
-          nextStep={nextStep}
-        />
+        <div className="register-client-container">
+          <div className="white-box">
+            <ClientForm clientData={clientData} handleClientChange={handleClientChange}
+              handleAddressChange={handleAddressChange} nextStep={nextStep} />
+          </div>
+        </div>
       );
     case 2:
       return (
-        <PetForm
-          pets={pets}
-          addPet={addPet}
-          removePet={removePet}
-          prevStep={prevStep}
-          handleSubmit={handleSubmit}
-        />
+        <div className="register-client-container">
+          <div className="white-box">
+            <PetForm pets={pets} addPet={addPet} removePet={removePet}
+              prevStep={prevStep} handleSubmit={handleSubmit} />
+          </div>
+        </div>
       );
     default:
       return <div>Erro: Passo desconhecido.</div>;

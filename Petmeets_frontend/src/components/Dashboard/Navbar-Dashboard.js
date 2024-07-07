@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logovertical from '../../img/logo-petmeets-vertical.png'
-import '../../styles/components/_dashboard.sass';
+import '../../styles/components/Dashboard/_dashboard.sass';
 
 const NavbarDashboard = () => {
     return (
