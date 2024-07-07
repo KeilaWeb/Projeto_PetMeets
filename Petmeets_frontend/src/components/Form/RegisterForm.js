@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './StyleForm/_registerForm.sass';
+import '../../styles/components/Form/_registerForm.sass';
 import { registerUser } from '../../services/authService';
 import { useNavigate } from 'react-router-dom';
 

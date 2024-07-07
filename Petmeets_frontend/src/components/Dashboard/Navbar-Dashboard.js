@@ -10,7 +10,7 @@ const NavbarDashboard = () => {
                 <img alt="Logo PetMeets" loading="lazy" width="220" height="48" decoding="async" src={logovertical} className="logo-nav" />
             </div>
             <div className="nav-links">
-                <Link to="/register-client">Cadastrar Cliente</Link>
+                <Link to="/register-client">Registrar Cliente</Link>
                 <Link to="/register-product">Cadastrar Produto</Link>
                 <Link to="/reports">Painel de Relatório</Link>
                 <Link to="/register-service">Cadastrar Serviços</Link>

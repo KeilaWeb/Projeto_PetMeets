@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './StyleForm/_loginForm.sass';
+import '../../styles/components/Form/_loginForm.sass';
 import { loginUser } from '../../services/authService';
 
 const LoginForm = ({ toggleView }) => {

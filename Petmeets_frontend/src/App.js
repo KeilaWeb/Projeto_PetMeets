@@ -5,11 +5,12 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import HomePage from './pages/Home/HomePage';
 import FormPage from './pages/Form/FormPage';
-import DashboardPage from './pages/Dasboard/DashboardPage'; 
+import DashboardPage from './pages/Dasboard/DashboardPage';
+import RegisterClientPage from './pages/Dasboard/RegisterClientPage';
 
 function App() {
   const location = useLocation();
-  const hideNavbarFooter = location.pathname === "/login" || location.pathname === "/Dashboard";
+  const hideNavbarFooter = location.pathname === "/login" || location.pathname === "/Dashboard" || location.pathname === "/register-client";
 
   console.log(location.pathname);
 
@@ -20,7 +21,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<FormPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/Dashboard" element={<DashboardPage />} />
+        <Route path="/register-client" element={<RegisterClientPage />} />
       </Routes>
       {!hideNavbarFooter && <Footer />}
     </div>

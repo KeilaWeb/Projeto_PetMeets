@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../../img/logo-petmeets-vertical.png';
-import '../../styles/components/_formPage.sass';
+import '../../styles/components/Form/_formPage.sass';
 import LoginForm from '../../components/Form/LoginForm';
 import RegisterForm from '../../components/Form/RegisterForm';
 

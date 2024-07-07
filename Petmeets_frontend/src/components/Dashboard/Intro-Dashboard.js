@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../styles/components/_dashboard.sass';
 
-const BodyDashboard = () => {
+const IntroDashboard = () => {
     return (
-        <div className="body-dashboard">
+        <div className="intro-dashboard">
             <button className="edit-profile">Editar Perfil</button>
             <button className="contact-agency">Falar com PetMeets</button>
         </div>
     );
 };
 
-export default BodyDashboard;
+export default IntroDashboard;

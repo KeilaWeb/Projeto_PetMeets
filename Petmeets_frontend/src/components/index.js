@@ -1,10 +1,11 @@
+export { default as NavbarDashboard } from './Dashboard/Navbar-Dashboard';
+export { default as Navbar } from './Navbar/Navbar';
 export { default as Hero } from './Home/Hero';
 export { default as About } from './Home/About';
-export { default as Navbar } from './Navbar/Navbar';
 export { default as Benefits} from './Home/Benefits';
 export { default as LoginForm} from './Form/LoginForm';
 export { default as AuthOptions} from './Form/AuthOptions';
 export { default as RegisterForm} from './Form/RegisterForm';
-export { default as NavbarDashboard } from './Dashboard/Navbar-Dashboard';
 export { default as MenuDashboard } from './Dashboard/Menu-Dashboard';
-export { default as BodyDashboard } from './Dashboard/Body-Dashboard';
+export { default as IntroDashboard } from './Dashboard/Intro-Dashboard';
+export { default as RegisterClient } from './Dashboard/DashboardRoute/Route-Register-Client/RegisterClient';
