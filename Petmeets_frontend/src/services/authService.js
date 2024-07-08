@@ -21,22 +21,12 @@ export const loginUser = async (loginData) => {
   }
 };
 
-export const registerCliente = async (userData) => {
+export const registerClientAndPet = async (clientData, petData) => {
   try {
-    const response = await api.post(`${API_URL}/user`, userData);
+    const response = await api.post(`${API_URL}/dashboard/register-client-and-pet`, { clientData, petData });
     return response.data;
   } catch (error) {
-    console.error('Error registering user:', error);
-    throw error;
-  }
-};
-
-export const registerPet = async (userData) => {
-  try {
-    const response = await api.post(`${API_URL}/user`, userData);
-    return response.data;
-  } catch (error) {
-    console.error('Error registering user:', error);
+    console.error('Error registering client and pet:', error);
     throw error;
   }
 };

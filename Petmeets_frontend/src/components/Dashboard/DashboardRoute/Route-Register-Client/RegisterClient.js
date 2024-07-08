@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import ClientForm from './ClientForm';
 import PetForm from './PetForm';
-import '../../../../styles/components/Dashboard/_formDashboard.sass'
+import '../../../../styles/components/Dashboard/_formDashboard.sass';
 
 const RegisterClient = () => {
-  const [step, setStep] = useState(1); // Estado para controlar o passo do formulário
+  const [step, setStep] = useState(1);
   const [clientData, setClientData] = useState({
     name: '',
     cpf: '',
@@ -16,38 +16,30 @@ const RegisterClient = () => {
       street: '',
       number: '',
     }
-  }); // Estado para armazenar dados do cliente
-  const [pets, setPets] = useState([]); // Estado para armazenar dados dos pets
+  });
+  const [pets, setPets] = useState([]);
 
-  // Função para avançar para o próximo passo
   const nextStep = () => setStep(step + 1);
-
-  // Função para voltar para o passo anterior
   const prevStep = () => setStep(step - 1);
 
-  // Função para atualizar os dados do cliente
   const handleClientChange = (e) => {
     const { name, value } = e.target;
     setClientData({ ...clientData, [name]: value });
   };
 
-  // Função para atualizar o endereço do cliente
   const handleAddressChange = (e) => {
     const { name, value } = e.target;
     setClientData({ ...clientData, address: { ...clientData.address, [name]: value } });
   };
 
-  // Função para adicionar um novo pet
   const addPet = (pet) => {
     setPets([...pets, pet]);
   };
 
-  // Função para remover um pet
   const removePet = (index) => {
     setPets(pets.filter((_, i) => i !== index));
   };
 
-  // Função para enviar os dados para o backend
   const handleSubmit = async () => {
     const payload = {
       client: clientData,
@@ -65,6 +57,9 @@ const RegisterClient = () => {
 
       if (response.ok) {
         console.log('Cliente registrado com sucesso!');
+        // Redirecionar para a página de dashboard após o registro
+        // Exemplo de redirecionamento usando react-router-dom:
+        // history.push('/dashboard');
       } else {
         console.error('Erro ao registrar cliente.');
       }
