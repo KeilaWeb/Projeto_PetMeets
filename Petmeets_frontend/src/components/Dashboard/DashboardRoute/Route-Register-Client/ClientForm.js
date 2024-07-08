@@ -1,4 +1,5 @@
 import React from 'react';
+import { registerClient } from '../../services/authService';
 
 const ClientForm = ({ clientData, handleClientChange, handleAddressChange, nextStep }) => {
   return (

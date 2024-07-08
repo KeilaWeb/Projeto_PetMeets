@@ -10,7 +10,7 @@ import RegisterClientPage from './pages/Dasboard/RegisterClientPage';
 
 function App() {
   const location = useLocation();
-  const hideNavbarFooter = location.pathname === "/login" || location.pathname === "/Dashboard" || location.pathname === "/register-client";
+  const hideNavbarFooter = location.pathname === "/login" || location.pathname === "/dashboard" || location.pathname === "/register-client";
 
   console.log(location.pathname);
 
