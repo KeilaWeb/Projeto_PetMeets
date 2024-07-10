@@ -1,5 +1,6 @@
 const express = require("express");
 const userRouter = require("./router/userRouter.js");
+const clientPetRoutes = require('./router/clientPetRoutes.js');
 const bodyParser = require("body-parser");
 const cors = require('cors');
 
@@ -21,8 +22,9 @@ app.get("/", (req, res) => {
     res.send('<h1> Hello World</h1>');
 });
 
-// Usando rotas definidas em userRouter
+// Usando rotas definidas em userRouter e clientPetRoutes
 app.use("/api", userRouter);
+app.use('/api', clientPetRoutes);
 
 // Iniciando o servidor
 app.listen(PORT, () => {
