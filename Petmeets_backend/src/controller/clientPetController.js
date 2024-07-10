@@ -2,10 +2,12 @@ const clientService = require('../service/clientPetService');
 
 const registerClientAndPet = async (req, res) => {
   try {
-    const { client, pets } = req.body;
-    const clientData = await clientService.createClient(client);
+    console.log('Request body:', req.body);
+    const { clientData, petData } = req.body;
 
-    const petPromises = pets.map(pet => clientService.createPet({ ...pet, clientId: clientData.insertId }));
+    const clientDataResult = await clientService.createClient(clientData);
+
+    const petPromises = (petData || []).map(pet => clientService.createPet({ ...pet, clientId: clientDataResult.insertId }));
     await Promise.all(petPromises);
 
     res.status(201).json({ message: 'Client and pets registered successfully' });

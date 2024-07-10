@@ -9,7 +9,6 @@ const PetForm = ({ pets, addPet, removePet, prevStep, handleSubmit }) => {
     idade: '',
     cor: '',
     porte: '',
-    adopted: '',
     observacoes: ''
   });
 
@@ -28,7 +27,6 @@ const PetForm = ({ pets, addPet, removePet, prevStep, handleSubmit }) => {
       idade: '',
       cor: '',
       porte: '',
-      adopted: '',
       observacoes: ''
     });
   };
@@ -39,7 +37,7 @@ const PetForm = ({ pets, addPet, removePet, prevStep, handleSubmit }) => {
       {pets.map((pet, index) => (
         <div key={index}>
           <p>{pet.nome} ({pet.tipo})</p>
-          <button type="button" onClick={() => removePet(index)}>Remover</button>
+          <button type="button-back" onClick={() => removePet(index)}>Remover</button>
         </div>
       ))}
       <div className='client-register-container'>
