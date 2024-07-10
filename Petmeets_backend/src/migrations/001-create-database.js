@@ -14,7 +14,7 @@ async function createDatabase(){
         await connection.end();
         console.log("Banco de dados criado!");
     }catch (error){
-        console.log(`Erro ao criar banco de dados: $(error)`)
+        console.log(`Erro ao criar banco de dados: ${error}`)
     }
 }
 

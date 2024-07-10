@@ -1,4 +1,5 @@
-const pool = require('../config/database.js');
+const mysql = require("mysql2/promise");
+const databaseConfig = require('../config/database.js');
 
 const createTables = async () => {
   try {
@@ -32,8 +33,13 @@ const createTables = async () => {
       );
     `;
 
-    await pool.query(clientTableQuery);
-    await pool.query(petTableQuery);
+    const connection = await mysql.createConnection(databaseConfig);
+    await connection.query(`USE ${databaseConfig.database}`)
+
+    await connection.query(clientTableQuery);
+    await connection.query(petTableQuery);
+
+    await connection.end();
 
     console.log('Tables created successfully');
   } catch (error) {
