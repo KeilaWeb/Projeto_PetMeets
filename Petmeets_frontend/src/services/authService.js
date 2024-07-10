@@ -23,7 +23,7 @@ export const loginUser = async (loginData) => {
 
 export const registerClientAndPet = async (clientData, petData) => {
   try {
-    const response = await api.post(`${API_URL}/dashboard/register-client-and-pet`, { clientData, petData });
+    const response = await api.post(`${API_URL}/dashboard/register-client`, { clientData, petData });
     return response.data;
   } catch (error) {
     console.error('Error registering client and pet:', error);

@@ -8,35 +8,35 @@ const ClientForm = ({ clientData, handleClientChange, handleAddressChange, nextS
         <form className="form-client">
           <div className="form-group">
             <label>Nome:</label>
-            <input className="input-register" type="text" name="name" value={clientData.name} onChange={handleClientChange} />
+            <input className="input-register" type="text" name="nome" value={clientData.nome} onChange={handleClientChange} />
           </div>
           <div className="form-group">
             <label>CPF:</label>
-            <input className="input-register" type="text" name="cpf"  value={clientData.cpf} onChange={handleClientChange} />
+            <input className="input-register" type="text" name="cpf" value={clientData.cpf} onChange={handleClientChange} />
           </div>
           <div className="form-group">
             <label>Telefone:</label>
-            <input className="input-register" type="text" name="phone" value={clientData.phone}  onChange={handleClientChange} />
+            <input className="input-register" type="text" name="telefone" value={clientData.telefone} onChange={handleClientChange} />
           </div>
           <div className="form-group">
             <label>Email:</label>
-            <input className="input-register" type="email" name="email"  value={clientData.email} onChange={handleClientChange} />
+            <input className="input-register" type="email" name="email" value={clientData.email} onChange={handleClientChange} />
           </div>
           <div className="form-group">
             <label>Cidade:</label>
-            <input className="input-register" type="text"  name="city" value={clientData.address.city} onChange={handleAddressChange} />
+            <input className="input-register" type="text" name="cidade" value={clientData.endereco.cidade} onChange={handleAddressChange} />
           </div>
           <div className="form-group">
             <label>CEP:</label>
-            <input className="input-register" type="text"  name="zip" value={clientData.address.zip} onChange={handleAddressChange} />
+            <input className="input-register" type="text" name="cep" value={clientData.endereco.cep} onChange={handleAddressChange} />
           </div>
           <div className="form-group">
             <label>Rua:</label>
-            <input className="input-register" type="text" name="street" value={clientData.address.street}  onChange={handleAddressChange} />
+            <input className="input-register" type="text" name="rua" value={clientData.endereco.rua} onChange={handleAddressChange} />
           </div>
           <div className="form-group padding-bottom-40">
             <label>Número:</label>
-            <input className="input-register" type="text" name="number" value={clientData.address.number} onChange={handleAddressChange} />
+            <input className="input-register" type="text" name="numero" value={clientData.endereco.numero} onChange={handleAddressChange} />
           </div>
           <button className="button" type="button" onClick={nextStep}>Próximo &raquo;</button>
         </form>
