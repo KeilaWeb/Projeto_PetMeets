@@ -8,27 +8,6 @@ const Footer = () => {
   return (
     <footer className="footer" id="footer" role="contentinfo">
       <div className="page--full">
-        <div className="footer--top">
-          <div className="social--follow">
-            <ul>
-              <li className="social--follow-item">
-                <a aria-label="YouTube" className="social-follow-link" href="https://www.youtube.com/@PetMeet-group/videos" target="_blank" rel="noopener noreferrer">
-                  <img className="social--icon" src={youtube} alt='YouTube PetMeets' />
-                </a>
-              </li>
-              <li className="social--follow-item">
-                <a aria-label="LinkedIn" className="social-follow-link" href="https://www.linkedin.com/showcase/googleworkspace/" target="_blank" rel="noopener noreferrer">
-                  <img className="social--icon" src={insta} alt='Instagram PetMeets' />
-                </a>
-              </li>
-              <li className="social--follow-item">
-                <a aria-label="Instagram" className="social-follow-link" href="https://www.instagram.com/googleworkspace/" target="_blank" rel="noopener noreferrer">
-                  <img className="social--icon" src={blogger} alt='Blogger PetMeets' />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div className="footer--middle">
           <ul className="navbar-links">
             <li><a href="#home"><span>Home</span></a></li>

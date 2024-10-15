@@ -4,8 +4,8 @@ import '../../styles/components/_home.sass';
 export function Benefits({title, content}) {
   return (
     <div className= "home-card">
-        <h3 className="color-blue padding-bottom-10">{ title }</h3>
-        <p className="color-dark-blue">{ content }</p>
+        <h5 className="color-dark-blue padding-bottom-10">{ title }</h5>
+        <p className="color-medium-blue">{ content }</p>
     </div>
   );
 }
