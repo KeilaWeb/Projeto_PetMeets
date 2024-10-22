@@ -26,7 +26,7 @@ export default function WelcomeScreen() {
     setTimeout(() => (ring1padding.value = withSpring(ring1padding.value + hp(5))), 100);
     setTimeout(() => (ring2padding.value = withSpring(ring2padding.value + hp(5.5))), 300);
 
-    setTimeout(() => navigation.navigate("Home"), 28500);
+    setTimeout(() => navigation.navigate("Home"), 500);
   }, []);
 
   return (
@@ -48,9 +48,9 @@ export default function WelcomeScreen() {
 
       {/* Texto Centralizado */}
       <View style={{ alignItems: "center", marginTop: 20 }}>
-        <Text style={{ fontSize: hp(7), fontWeight: "bold", color: "white", letterSpacing: 2, fontFamily: 'GentySans' }}>
+        <Text style={{ fontSize: hp(7.2), fontWeight: "bold", color: "white", letterSpacing: 2, fontFamily: 'GentySans' }}>
           PetMeets</Text>
-        <Text style={{ fontSize: hp(2), fontWeight: "500", color: "white", letterSpacing: 2 }}>
+        <Text style={{ fontSize: hp(2.2), fontWeight: "500", color: "white", letterSpacing: 2 }}>
           O cuidado do seu pet na palma da sua mão
         </Text>
       </View>
