@@ -16,6 +16,7 @@
     "express": "^4.19.2",
     "mysql2": "^3.10.2",
     "mysql2-promise": "^0.1.4",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "petmeets": "file:"
   }
 }
